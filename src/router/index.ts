@@ -6,7 +6,7 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/mytest',
+    path: '/',
     // 定义路由名称 可以快速使用 name 进行跳转
     name: 'mytest',
     // 异步加载组件
