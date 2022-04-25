@@ -1,11 +1,10 @@
 
 <script setup lang="ts">
 
-const msg = 'hello'
 </script>
 
 <template>
-  <div>{{ msg }}</div>
+  <div>login</div>
 </template>
 
 <style>

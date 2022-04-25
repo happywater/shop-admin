@@ -1,7 +1,5 @@
 <template>
-  <van-config-provider>
-    <router-view />
-  </van-config-provider>
+  <router-view />
 </template>
 
 <script setup lang="ts">
