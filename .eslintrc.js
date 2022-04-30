@@ -31,6 +31,12 @@ module.exports = {
       rules: {
         'vue/multi-word-component-names': 0
       }
+    },
+    {
+      files: ['src/api/**/*.ts'],
+      rules: {
+        camelcase: 'off'
+      }
     }
   ]
 }
