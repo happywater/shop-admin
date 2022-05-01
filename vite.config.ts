@@ -13,5 +13,15 @@ export default defineConfig({
     alias: {
       '@': path.join(__dirname, 'src')
     }
+  },
+  server: {
+    proxy: {
+      '/micro/api/': {
+        target: 'http://8.129.175.188:7000/',
+        changeOrigin: true
+        // rewrite: (path) => path.replace(/^\/api/, '')
+      }
+
+    }
   }
 })
