@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig } from 'axios'
 
 const request = axios.create({
-  baseURL: 'http://8.129.175.188:7000/'
+  baseURL: import.meta.env.VITE_API_BASEURL
 })
 
 // Add a request interceptor
@@ -29,6 +29,8 @@ request.interceptors.response.use(function (response) {
 })
 
 export default <T = any>(config: AxiosRequestConfig) => {
+  console.log('AxiosRequestConfig')
+  console.log(import.meta.env)
   return request(config).then(res => {
     return res.data.data as T
   })
