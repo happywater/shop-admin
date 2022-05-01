@@ -4,10 +4,10 @@
 </script>
 
 <template>
-  <div>home</div>
-  <div>{{ $store.state.count }}</div>
-</template>
+  <h1>home</h1>
 
+  <el-button>test1</el-button>
+</template>
 <style>
 
 </style>
