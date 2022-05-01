@@ -5,6 +5,6 @@ import { App } from 'vue'
 export default {
   install (app: App) {
     console.log('element plus install')
-    app.use(ElementPlus)
+    app.use(ElementPlus, { size: 'small' })
   }
 }
